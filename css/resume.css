@@ -111,5 +111,32 @@ section.resume-section {
 
 a {
   color: #BD5D38; }
-  a:hover, a:focus, a:active {
-    color: #824027; }
+
+a:hover, a:focus, a:active {
+  color: #824027; }
+
+
+.logo {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+}
+
+#rutgers {
+  position: relative;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+#sppu {
+  position: relative;
+  max-width: 200px;
+  max-height: 150px;
+  margin-right: 25px;
+}
+
+#hsbc {
+  max-width: 250px;
+  max-height: 200px;
+}
+  
