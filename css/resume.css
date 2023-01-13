@@ -6,7 +6,7 @@
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #868e96; }
+  color: #495057; }
 
 @media (min-width: 992px) {
   body {
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40; }
@@ -29,20 +29,20 @@ h1 {
   line-height: 5.5rem; }
 
 h2 {
-  font-size: 3.5rem; }
+  font-size: 3rem; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 1.75rem; }
 
 p.lead {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 400; }
 
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-size: 1.35rem; }
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.2rem; }
 
 .list-social-icons a {
   color: #495057; }
@@ -55,6 +55,26 @@ p.lead {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
     color: #9a031e; }
+
+.logo {
+  display: block;
+  position: relative;
+  margin-top: 20px; }
+
+#rutgers {
+  position: right;
+  max-height: 250px;
+  max-width: 250px; }
+
+#sppu {
+  position: right;
+  max-width: 250px;
+  max-height: 250px; }
+
+#hsbc {
+  position: right;
+  max-width: 250px;
+  max-height: 100px; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 700;
