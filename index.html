@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    
+    <link rel="stylesheet" type="text/css" href="vendor/fancybox/css/jquery.fancybox.min.css">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">-->
@@ -58,7 +58,7 @@
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
@@ -323,45 +323,135 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+          <h2 class="mb-5">Projects</h2>
+          <p>A few academic and self developed projects</p>
+                    <!-- Begins card -->
+                    <div class="row">
+                      <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                          <img src="img/ImageSimilaritySearch.png" class="card-img-top" alt="ImageSimilaritySearch.png">
+                          <div class="card-body">
+                            <h3 class="card-title"><b>Image Similarity Search</b></h3>
+                            <p class="lead">InceptionResNetV2</p>
+                            <p class="card-text">Image similarity search using a pretrained Convolutional Neural Network (CNN) model and then using KNN classifier to find similar images. </p>
+                            <p>
+                              <span class="badge badge-pill badge-secondary">Imagenette dataset</span>
+                              <span class="badge badge-pill badge-secondary">Python</span>
+                              <span class="badge badge-pill badge-secondary">Tensorflow</span>
+                              <span class="badge badge-pill badge-secondary">CNN</span>
+                              <span class="badge badge-pill badge-secondary">KNN</span>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="https://github.com/MansiGit/Image_Similarity_Search" class="text-dark" target="_blank">
+                              <i class="fab fa-github-square fa-2x"></i>
+                            </a>
+                            <a href="https://github.com/MansiGit/Image_Similarity_Search" class="btn btn-dark float-right" target="_blank">View project</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <div class="container">
+          <div class="gridder my-3">
+
+            <div class="grid-item wow zoomIn">
+              <div class="img-place" data-src="img\Tableau Desktop Specialist certificate-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tableau Desktop Specialist</h5> <p>Data Visualization</p>">
+                <img src="img\Tableau Desktop Specialist certificate-1.jpg" alt="">
+                <div class="img-caption">
+                  <h5 class="fg-theme">Tableau Desktop Specialist</h5>
+                  <p>Data Visualization</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item wow zoomIn">
+              <div class="img-place" data-src="img\Mansi_2Star Performer award.png" data-fancybox data-caption="<h5 class='fg-theme'>HSBC Awards</h5> <p>Group Data Engineering</p>">
+                <img src="img\Mansi_2Star Performer award.png" alt="">
+                <div class="img-caption">
+                  <h5 class="fg-theme">HSBC Awards</h5>
+                  <p>Group Data Engineering</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item apps ios wow zoomIn">
+              <div class="img-place" data-src="img\Coursera_Statstics_with_Python_University_of_Michigan.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Statstics with Python</h5> <p>University of Michigan</p>">
+                <img src="img\Coursera_Statstics_with_Python_University_of_Michigan.jpg" alt="">
+                <div class="img-caption">
+                  <h5 class="fg-theme">Statstics with Python</h5>
+                  <p>University of Michigan</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item wow zoomIn">
+              <div class="img-place" data-src="img\CertificateOfCompletion_Agile at Work Building Your Agile Team.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Agile Methodologies</h5> <p>LinkedIn Learning</p>">
+                <img src="img\CertificateOfCompletion_Agile at Work Building Your Agile Team.jpg" alt="">
+                <div class="img-caption">
+                  <h5 class="fg-theme">Agile Methodologies</h5>
+                  <p>LinkedIn Learning</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item wow zoomIn">
+              <div class="img-place" data-src="img\CertificateOfCompletion_Data Engineering Foundations.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Data Engineering Foundations</h5> <p>LinkedIn Learning</p>">
+                <img src="img\CertificateOfCompletion_Data Engineering Foundations.jpg" alt="">
+                <div class="img-caption">
+                  <h5 class="fg-theme">Data Engineering Foundations</h5>
+                  <p>LinkedIn Learning</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item wow zoomIn">
+              <div class="img-place" data-src="img\CourseraHadoopPlatformandApplicationFramework-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Hadoop Platform and Application Framework</h5> <p>Coursera</p>">
+                <img src="img\CourseraHadoopPlatformandApplicationFramework-1.jpg" alt="">
+                <div class="img-caption">
+                  <h5 class="fg-theme">Hadoop Platform and Application Framework</h5>
+                  <p>Coursera</p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End gridder -->
+
+        </div>          
+          <ul>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
+              5 Star in SQL and Python on Hackerrank <a href="https://www.hackerrank.com/MansiBorole">MansiBorole</a>   
+            </li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
+              Certified Associate in Python Programming</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>Specialization  course : 
+              <a href = "https://github.com/MansiGit/certifications/blob/main/Coursera_Statstics_with_Python_University_of_Michigan.pdf">Statstics with Python - University of Michigan</a>
+            </li>
+            <ul>
+              <li>understanding and Visualizing Data with Python</li>
+              <li>Inferential Statistical Analysis with Python</li>
+              <li>Fitting Statistical Models to Data with Python</li>
+            </ul>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+              Hadoop Platform and Application Framework, Coursera-University of California San Diego </li>
             <li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
+              Circle of Excellence for 2022</li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
+              Star Performer for 2021, 2020,</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Star Performer for 2021, 2020,</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Pat on the Back award (Q1 2021) - HSBC Technology India</li>
+
           </ul>
         </div>
       </section>
@@ -371,6 +461,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/fancybox/js/jquery.fancybox.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
