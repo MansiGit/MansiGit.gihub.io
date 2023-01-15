@@ -16,7 +16,6 @@ h1,
 h2,
 h3,
 h4,
-
 h6 {
   @include heading-font;
   font-weight: 700;
@@ -41,6 +40,12 @@ h5{
   @include heading-font;
   font-weight: 700;
   text-transform: uppercase;
+  color: $gray-800;
+}
+
+p.h7 {
+  font-size: 1rem;
+  font-weight: 550;
   color: $gray-800;
 }
 p.lead {
@@ -99,7 +104,11 @@ p.lead {
   max-width: 250px;
   max-height: 100px;
 }
-
+#marathonbibs {
+  position: right;
+  max-width: 325px;
+  max-height: 325px;
+}
 // for the awards page
 .gridder {
   position: relative;
@@ -189,4 +198,8 @@ p.lead {
 
 .container {
   text-align: left;
+}
+
+.visitCounter{
+  color: $light !important;
 }

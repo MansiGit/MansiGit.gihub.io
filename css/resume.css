@@ -39,6 +39,11 @@ h5 {
   text-transform: uppercase;
   color: #343a40; }
 
+p.h7 {
+  font-size: 1rem;
+  font-weight: 550;
+  color: #343a40; }
+
 p.lead {
   font-size: 1.15rem;
   font-weight: 400; }
@@ -80,6 +85,11 @@ p.lead {
   position: right;
   max-width: 250px;
   max-height: 100px; }
+
+#marathonbibs {
+  position: right;
+  max-width: 325px;
+  max-height: 325px; }
 
 .gridder {
   position: relative;
@@ -155,6 +165,9 @@ p.lead {
 
 .container {
   text-align: left; }
+
+.visitCounter {
+  color: #f8f9fa !important; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 700;

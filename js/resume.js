@@ -26,3 +26,8 @@
   });
 
 })(jQuery); // End of use strict
+
+
+function websiteVisits(response){
+  document.querySelector("#visits").textContent = response.value;
+}
