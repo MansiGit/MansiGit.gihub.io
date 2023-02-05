@@ -31,3 +31,12 @@
 function websiteVisits(response){
   document.querySelector("#visits").textContent = response.value;
 }
+
+var button = document.getElementById("download-resume");
+button.addEventListener("click", function() {
+  gtag("event", "click", {
+    "event_category": "Resume Download",
+    "event_label": "Downloaded",
+    "value": 1
+  });
+});
