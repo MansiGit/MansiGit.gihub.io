@@ -12,4 +12,5 @@ An easy way to receive notifications when someone submits a message without havi
 5.	Verify that the GTM tracking code is installed properly on your website by using the GTM preview and debug mode.
 6.	Add and configure tags (such as Google Analytics) through the GTM interface to track specific user interactions on your website.
 7.	Publish your container again with the new tags.
-8.	Monitor your website's data in the corresponding service (such as Google Analytics) to ensure that it is being tracked correctly.
+8.	Monitor your website's data in Google Analytics to ensure that it is being tracked correctly.
+![image](https://user-images.githubusercontent.com/31558571/218512712-fbbd0e43-e460-4325-b14a-b8857a1f80e3.png)
