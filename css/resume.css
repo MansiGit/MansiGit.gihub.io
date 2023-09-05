@@ -8,6 +8,9 @@ body {
   padding-top: 54px;
   color: #495057; }
 
+::selection {
+  background: pink; }
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
