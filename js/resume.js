@@ -25,6 +25,21 @@
     target: '#sideNav'
   });
 
+  // Show the top button when scrolling down
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) { // Adjust this value to control when the button appears
+    $('.container-top').addClass('show-button');
+  } else {
+    $('.container-top').removeClass('show-button');
+  }
+});
+
+// Scroll to the top when the button is clicked
+$('.top-button').click(function() {
+  $('html, body').animate({ scrollTop: 0 }, 800); // You can adjust the animation speed (800ms)
+  return false;
+});
+
 })(jQuery); // End of use strict
 
 
@@ -39,4 +54,20 @@ button.addEventListener("click", function() {
     "event_label": "Downloaded",
     "value": 1
   });
+});
+
+
+// Show the top button when scrolling down
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) { // Adjust this value to control when the button appears
+    $('.container-top').addClass('show-button');
+  } else {
+    $('.container-top').removeClass('show-button');
+  }
+});
+
+// Scroll to the top when the button is clicked
+$('.top-button').click(function() {
+  $('html, body').animate({ scrollTop: 0 }, 800); // You can adjust the animation speed (800ms)
+  return false;
 });
