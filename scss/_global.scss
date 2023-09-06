@@ -22,7 +22,7 @@ h4,
 h6 {
   @include heading-font;
   font-weight: 700;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   color: $primary;
 }
 
@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 h5{
@@ -58,7 +58,7 @@ p.lead {
 }
 
 .subheading {
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-weight: 500;
   @include heading-font;
   font-size: 1.2rem;
@@ -210,4 +210,72 @@ h1 .text-primary {
 
 .visitCounter{
   color: $light !important;
+}
+
+//this is for expandable sections
+#module {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#module #collapseMihin.collapse:not(.show) {
+  display: block;
+  height: 3rem;
+  overflow: hidden;
+}
+
+#module #collapseMihin.collapsing {
+  height: 3rem;
+}
+
+
+#module #collapseHsbc.collapse:not(.show) {
+  display: block;
+  height: 3rem;
+  overflow: hidden;
+}
+
+#module #collapseHsbc.collapsing {
+  height: 3rem;
+}
+#module a.collapsed:after {
+  content: 'Show More >>';
+}
+
+#module a:not(.collapsed):after {
+  content: '<< Show Less';
+}
+ //this is for the fading scroll up button
+/* Sticky top button */
+.container-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px; /* Adjust this value to control the button's horizontal position */
+  z-index: 1000; /* Make sure it's above other content */
+}
+
+.top-button {
+  width: 60px;
+  height: 60px;
+  background:$red;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Initially hidden */
+  cursor: pointer;
+}
+
+.top-button:before {
+  content: "\f077"; 
+  font-family: FontAwesome; 
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Show the button when scrolling down */
+.container-top.show-button .top-button {
+  opacity: 1;
 }

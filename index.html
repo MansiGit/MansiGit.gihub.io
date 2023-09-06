@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="img\profile.jpg">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+   
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -37,8 +37,6 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendor/fancybox/css/jquery.fancybox.min.css">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">-->
     <script src="https://kit.fontawesome.com/a680f175d2.js" crossorigin="anonymous"></script>
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     
@@ -46,7 +44,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
-    <script async src = "https://api.countapi.xyz/hit/mansigit.github.io/8a6f8670-9d91-4e0b-af7d-9a968285fbfa?callback=websiteVisits"></script>
+    <!-- Jquery import -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
   </head>
 
   <body id="page-top">
@@ -162,40 +162,71 @@
             </ul>
           <a href="https://mansigit.github.io/Mansi_Borole_MSCS_Resume.pdf" aria-label="Mansi's resume" class="btn btn-dark btn-lg active mt-10" role="button" aria-pressed="true"  target="_blank" id="download-resume">Download Resume</a>
           </template>
-          <div class="d-none" id="social-icons-web"></div>
+          <div class="d-none d-md-block" id="social-icons-web"></div>
         </div>
       </section>
-
+      <hr/>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Development Engineer Intern</h3>
+              <div class="subheading mb-3">Michigan Health Information Networks (Mihin)</div>
+              <div id="module" >
+                <div class="collapse" id="collapseMihin" aria-expanded="false">
+                  <ul>
+                    <li>Worked on backend development of a state-sponsored project &ldquo;Social Determinants of Health&rdquo;. Developed and deployed <strong>AWS Lambda </strong>functions using Python Boto library for processing, validating, and storing Electronic Health Records in <strong>AWS RDS</strong>.</li>
+                    <li>Created mock interfaces and implemented unit tests to validate the functionality of the database drivers. Took a<strong>&nbsp;test-driven design </strong>approach to ensure code quality and coverage.&nbsp;</li>
+                    <li>Optimized <strong>Postgres&nbsp;</strong>database performance using indexes and views, resulting in <strong>80% faster processing</strong>.</li>
+                    <li>Created a PoC Project to evaluate<strong>&nbsp;Serverless architecture&nbsp;</strong>using AWS Lambda, SNS, CloudFormation and presented it to the team.</li>
+                  </ul>
+                </div>
+                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseMihin" aria-expanded="false" aria-controls="collapseExample">
+                </a>
+              </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2023 - Present</span>
+              <div class="logo">
+                <img id="hsbc" src="img/mihin_logo.png" alt="Mihin Logo">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
               <h3 class="mb-0">Software Engineer (Big Data)</h3>
               <div class="subheading mb-3">HSBC Bank</div>
-              <ul>
-                <li>  
-                  <b>Cluster Virtualization</b> Migrated Hadoop Master services (Name nodes, YARN, Solr, Zookeeper, Hive) from on-premise servers to Virtualized machines using  <b>ESXi hypervisor</b>, achieving a  <b>cost avoidance of $0.7M </b>on buying new expensive servers while saving 400 man hours in maintenance upgrades using Ansible Tower 
-                </li> 
-                <li>
-                  <b>Data Engineering: </b>Developed  <b>ETL pipelines</b> and scripts in python to Load Data and archive 	data. Leveraged Erasure coding to achieve savings of 50% in total storage space
-                </li>
-                <li> 
-                  <b>Data Visualization and Reporting: </b> Developed a <b> BI tool "BigData360"</b> using Grafana for real-time monitoring and management of 58 Hadoop production and dev clusters. This provided visibility and control over HDFS data and cluster utilization, allowing clients to optimize usage and make informed decisions
-                </li> 
-                <li> 
-                  <b>Capacity Management: </b>Performed  <b>Hadoop/Linux administration</b> provisioning space on clusters by building and decommissioning servers, Node repurposes from one cluster to another and installing Hadoop components and services on 200+ servers 
-                </li>
-                <li>	 
-                  <b>Ansible Automation</b>: Created Ansible playbooks and python scripts to build new RedHat servers with Hadoop capabilities 
-                </li>
-                <li> 
-                  <b>SQL: </b>	Created a MySQL tool to generate Chargeback reports to determine the cost of Physical Hardware, Licenses, and Supporting Staff for each of  <b>2000+ servers</b> in the estate based on resource usage and used Qlik Sense to publish the reports
-                <li>
-                  <b>Bash Scripting: </b>Wrote housekeeping scripts that would reduce replication factor of cold data on the cluster eﬀectively saving 45 TB/month
-                </li>
-              </ul>
+              <div id="module">
+                <div class="collapse" id="collapseHsbc">
+                  <ul>
+                    <li> 
+                      <b>Data Visualization and Reporting:</b> Built a real-time alerting, monitoring, data cataloguing system "BigData360" for improving Data Governance. Built dashboards for 50+ Hadoop dev and prod clusters using <b>Grafana and Prometheus</b> by collecting metrics from Cloudera APIs while achieving <b>15% reduction</b> in mean time to repair. 
+                    </li>
+                    <li>
+                      <b>Chargeback Reports: </b>Generated monthly cost reports to aid in Capacity Planning and Billing. Built an automated workflow to analyze live tenant usage metrics from the big data estate using <b>Tableau, MySQL</b> and saving ~150 man-hours.
+                    </li>
+                    <li>  
+                      <b>Cluster Virtualization: </b>Automated migration of Hadoop Master services (NameNodes, YARN, Solr, Zookeeper, Hive) from on-premise servers to virtual machines in ESXi hypervisor, achieving a cost avoidance of $700k on buying new expensive servers while saving 400 man hours in maintenance upgrades. 
+                    </li>
+                    <li>
+                      <b>Data Engineering: </b>Developed <b>ETL pipelines</b> and scripts in python to Load Data and archive data. Leveraged Erasure coding to achieve savings of 50% in total storage space
+                    <li>	 
+                      <b>Ansible Automation</b>: Created Ansible playbooks and python scripts to build new RedHat servers with Hadoop capabilities 
+                    </li>
+                    <li> 
+                      <b>Capacity Management: </b>Performed  <b>Hadoop/Linux administration</b> provisioning space on clusters by building and decommissioning servers, Node repurposes from one cluster to another and installing Hadoop components and services on 200+ servers 
+                    </li>
+                    <li>
+                      Lead a team of 4 colleagues delivered high-quality, impactful quarterly newsletters highlighting project success stories and KPIs from the ‘Group Data Technology’ Department, closely working with Ex Co members in US, UK and Asia-Pacific regions
+                    </li>
+                  </ul>
+                </div>
+                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseHsbc" aria-expanded="false" aria-controls="collapseExample"></a>
+              </div>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">July 2019 - August 2022</span>
@@ -207,43 +238,22 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Communications Lead</h3>
-              <div class="subheading mb-3">HSBC Bank</div>
+              <h3 class="mb-0">Part time Web Designer</h3>
               <ul>
-                <li>
-                  Lead a team of 4 colleagues delivered high-quality, impactful quarterly newsletters highlighting project success stories and KPIs from the ‘Group Data Technology’ Department, closely working with Ex Co members in US, UK and Asia-Pacific regions
-                </li>
-                <li>
-                  Published team's quarterly achievements and highlights via Newsletters to the entire department
-                </li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2019 - August 2022</span>
-              <div class="logo">
-                <img id="hsbc" src="img/hsbclogo.png" alt="Hsbc Logo">
-              </div>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Freelance Web Designer</h3>
-              <ul>
+                <li>Managing wordpress/drupal webpages for Mechanical and Aerospace Engineering, School of Engineering @ Rutgers</li>
                 <li>Designed and developed websites for client’s businesses using HTML, CSS, Javascript, Wordpress.</li>
-                <li>Created e-commerce websites using Shopify, woo-commerce that helped the client to track new orders and shipping details using a UI. </li>
                 <li>Work sample <a href="https://deogiriinfratech.com">https://deogiriinfratech.com</a> , <a href="https://mansigit.github.io/">https://mansigit.github.io/</a> </li>
               </ul>  
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">July 2018 - July 2019</span>
+              <span class="text-primary">July 2018 - Present</span>
             </div>
           </div>
 
         </div>
 
       </section>
-
+      <hr/>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
@@ -253,7 +263,7 @@
               <h3 class="mb-0">Rutgers University - New Brunswick, NJ, USA</h3>
               <div class="subheading mb-3">Masters of Science, Computer Science</div>
               <div> Massive Data Analytics , Machine Learning</div>
-              <p>GPA: 3.83* / 4.0</p>
+              <p>GPA: 3.91 / 4.0</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2022 - May 2024</span>
@@ -280,6 +290,7 @@
 
         </div>
       </section>
+      <hr/>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
@@ -350,7 +361,7 @@
             </li>
           </ul>
       </section>
-
+      <hr/> 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="w-100">
           <h2 class="mb-5">Projects</h2>
@@ -509,7 +520,7 @@
             </div>                           
         </div>
       </section>
-
+      <hr/>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <div class="container">
@@ -683,7 +694,11 @@
                   </div>
             </div>
         </section>
+        <div class="container-top">
+          <a href="#" class="top-button"></a>
+        </div>
       </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
