@@ -279,6 +279,11 @@ section.resume-section {
   section.resume-section .resume-item .resume-date {
     min-width: none; }
 
+@media (max-width: 767px) {
+  section.resume-section {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important; } }
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh; }
