@@ -117,6 +117,35 @@ h1 .text-primary {
   max-width: 600px;
   max-height: 325px;
 }
+
+//for scaling logos on mobile
+@media (max-width:768px){
+  
+#rutgers {
+  max-height: 150px;
+  max-width: 150px;
+
+
+}
+
+#sppu {
+  max-width: 150px;
+  max-height: 100px;
+
+}
+
+#hsbc {
+  max-width: 150px;
+  max-height: 50px;
+
+
+}
+#marathonbibs {
+  max-width: 300px;
+  max-height: 150px;
+}
+}
+
 // for the awards page
 .gridder {
   position: relative;
