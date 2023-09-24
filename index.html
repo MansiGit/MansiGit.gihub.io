@@ -92,7 +92,7 @@
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            <a class="nav-link js-scroll-trigger" href="#awards">Certifications</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
@@ -133,11 +133,9 @@
           </span>
           <h2 class="mb-5 d-md-none">About</h2>
           <p class="lead mb-5">
-            Welcome!👋 I'm currently a Software Development Intern at <a href="https://mihin.org/"><b>Michigan Health Information Networks</b></a>. 
+            Welcome!👋 I'm a Computer Science Graduate Student at <a href="#education"><b>Rutgers</b></a> and currently working as a Software Development Intern at <a href="https://mihin.org/"><b>Michigan Health Information Networks</b></a>. 👩‍🎓 
             <br><br>
-            I'm always curious to see how an things work, and I try to question if this the best we can do? 
-            <br>
-            I am also a data enthusiast and love to build business driven solutions. With a background in Data Engineering and Infrastructure Management, my expertise primarily lies in Python, SQL, AWS and Data Visualization. 🤓
+            A data enthusiast and who loves to build business driven solutions. With a background in Big Data Engineering and Infrastructure Management, my expertise primarily lies in Python, SQL, AWS and Data Visualization. 🤓
             <br><br>
             Currently, I'm exploring <a href="https://docs.python-guide.org/writing/style/">pythonic</a> ways to improve code quality and writing my own unit tests 😉
             
@@ -234,6 +232,9 @@
               <div id="module" class="mt-3">
                 <div class="collapse" id="collapseHsbc">
                   <ul>
+                    <li>
+                      <b>Provisioned Cloudera Hadoop clusters </b>(HDFS, MapReduce, YARN, Hive, Oozie, Zookeeper, Solr) on-premise for production and disaster recovery in the UK and HK datacenters. 
+                    </li>
                     <li> 
                       Built &quot;BigData360&quot;, a real-time alerting, monitoring system and designed dashboards for 80+ Hadoop dev and prod clusters using <strong>Grafana&nbsp;</strong>and<strong>&nbsp;Prometheus&nbsp;</strong>by collecting metrics from <strong>Cloudera</strong> <strong>APIs</strong> and <strong>Node Exporters.</strong>
                     </li>
@@ -244,9 +245,9 @@
                       Virtualized control nodes by migrating critical Hadoop Master services (NameNodes, YARN, Solr, Zookeeper, Hive) from on-premise servers to <b>ESXi</b> virtual machines to enhance cluster efficiency. Achieved <strong>cost avoidance of $700k</strong> on buying new expensive servers while saving 400 work hours in maintenance upgrades.&nbsp;
                     </li>
                     <li>
-                      Developed ETL pipelines and scripts in python to archive cold data. Leveraged Erasure coding to achieve savings of 50% in total storage space.
+                      Developed ETL pipelines and scripts in python to archive cold data. Set up HDFS Erasure coding policies to achieve savings of 50% in total storage space.
                     <li>	 
-                      Created <b>Ansible playbooks</b> and python scripts to build RedHat servers with Cloudera(CDP) Hadoop capabilities.
+                      Created automation using <b>Ansible playbooks</b> to streamline the provisioning of RedHat servers with Cloudera(CDP) Hadoop capabilities.
                     </li>
                     <li> 
                       Mentored and onboarded new SWEs. Conducted knowledge sharing sessions with my team.
@@ -314,8 +315,10 @@
               </div>
               <h3 class="mb-0">University of Pune, India</h3>
               <div class="subheading mb-3">Bachlors of Engineering, Computer Science</div>
-              <div>Coursework: Data Structures, Database Management, Web Technology, Machine Learning</div>
+              <div>Coursework: Data Structures, Database Management, Distributed Computing</div>
               <p>CGPA: 8.61 / 10</p>
+              <p> Publication: A <b>&quot;Survey on Blockchain for Enabling Transparency in transactions of Government Direct Benefit Transfers (DBT)&quot; >>
+                 <a href="https://doi.org/10.5120/IJCA2019918637">DOI:10.5120/IJCA2019918637</a></b> </p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">June 2015 - June 2019</span>
@@ -344,7 +347,7 @@
               <b>Cloud & Databases platforms</b> PostgreSQL, MySQL, MongoDB, AWS (S3, EC2, Lambda, RDS, API Gateway, CloudFormation)</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              <b>Big Data Hadoop:</b> HDFS, Apache Spark, Pyspark, Scoop, ETL, Enterprise Data Ingestion and Warehousing</li>
+              <b>Big Data Hadoop:</b> HDFS, Apache Spark, Pyspark, Apache Airflow, Scoop, ETL, Enterprise Data Ingestion and Warehousing</li>
             <li>
               <i class="fa-li fa fa-check"></i>
               <b>Tools & Frameworks:</b> Git, Serverless, Boto, Node.js, React, Pytest, Tableau, Grafana, Microsoft Suite, JIRA, Agile, CI/CD</li>
@@ -358,11 +361,11 @@
           <ul class="fa-ul mb-3">
             <li>
               <i class="fa-li fa fa-check"></i>
-              Test-driven developement, Building cloud native applications
+              Test-driven developement(TDD), Backend development, REST APIs, Microservices, Serverless application developement
               </li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Hadoop Administration, DevOps, Big Data Analytics and Capcity Management</li>
+              Hadoop Administration, DevOps SRE, Big Data Engineering and Capcity Management</li>
             </ul>
           
             <div class="subheading mb-0">Tools</div>
@@ -404,6 +407,31 @@
           <h2 class="mb-5">Projects</h2>
           <p>A few academic and self developed projects</p>
             <div class="row">
+              <!-- Begins card -->
+              <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                  <img src="img\Airflow-Project.png" class="card-img-top" alt="Airflow-Project.png">
+                  <div class="card-body">
+                    <h3 class="card-title"><b>Apache Airflow: Data Ingestion</b></h3>
+                    <p class="lead">Real-time data ingestion pipeline using Apache Airflow</p>
+                    <p class="card-text">Set up Airflow and SQLite database using Docker. Use Python airflow library to write a DAG to transform & load data from a csv to a Sqlite table in real time</p>
+                    <p>
+                      <span class="badge badge-pill badge-secondary">Apache Airflow</span>
+                      <span class="badge badge-pill badge-secondary">Docker Compose</span>
+                      <span class="badge badge-pill badge-secondary">SQLite</span>
+                      <span class="badge badge-pill badge-secondary">DAGs</span>
+                      <span class="badge badge-pill badge-secondary">Python</span>
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://github.com/MansiGit/Apache-Airflow-data-ingestion" class="text-dark" target="_blank">
+                      <i class="fab fa-github-square fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/MansiGit/Apache-Airflow-data-ingestion#readme" class="btn btn-dark float-right" target="_blank">ReadMe</a>
+                  </div>
+                </div>
+              </div>
+              <!-- End card -->
                     <!-- Begins card -->
                     <div class="col-md-4 mb-5">
                       <div class="card h-100">
@@ -503,70 +531,44 @@
                     </div>
                   </div>
                 <!-- End card --> 
+          
                 <!-- Begins card -->
                 <div class="col-md-4 mb-5">
                   <div class="card h-100">
-                    <img src="img/ImageSimilaritySearch.png" class="card-img-top" alt="ImageSimilaritySearch.png">
+                    <img src="img\Mansi-Borole-portfolio.png" class="card-img-top" alt="Mansi-Borole-portfolio.png">
                     <div class="card-body">
-                      <h3 class="card-title"><b>Image Similarity Search</b></h3>
-                      <p class="lead">InceptionResNetV2</p>
-                      <p class="card-text">Image similarity search using a pretrained Convolutional Neural Network (CNN) model and then using KNN classifier to find similar images. </p>
+                      <h3 class="card-title"><b>MansiGit.github.io</b></h3>
+                      <p class="lead">Web Portfolio</p>
+                      <p class="card-text">Checkout my source code for this portfolio! </p>
                       <p>
-                        <span class="badge badge-pill badge-secondary">Imagenette dataset</span>
-                        <span class="badge badge-pill badge-secondary">Python</span>
-                        <span class="badge badge-pill badge-secondary">Tensorflow</span>
-                        <span class="badge badge-pill badge-secondary">CNN</span>
-                        <span class="badge badge-pill badge-secondary">KNN</span>
+                        <span class="badge badge-pill badge-secondary">HTML</span>
+                        <span class="badge badge-pill badge-secondary">SCSS</span>
+                        <span class="badge badge-pill badge-secondary">JS</span>
+                        <span class="badge badge-pill badge-secondary">Gulp</span>
+                        <span class="badge badge-pill badge-secondary">npm</span>
                       </p>
                     </div>
                     <div class="card-footer">
-                      <a href="https://github.com/MansiGit/Image_Similarity_Search" class="text-dark" target="_blank">
+                      <a href="https://github.com/MansiGit/MansiGit.github.io" class="text-dark" target="_blank">
                         <i class="fab fa-github-square fa-2x"></i>
                       </a>
-                      <a href="https://github.com/MansiGit/Image_Similarity_Search" class="btn btn-dark float-right" target="_blank">View project</a>
+                      <a href="https://mansigit.github.io/" class="btn btn-dark float-right" >View project</a>
                     </div>
                   </div>
                 </div>
-              <!-- End card -->   
-                    
-                     
-                    <!-- Begins card -->
-                    <div class="col-md-4 mb-5">
-                      <div class="card h-100">
-                        <img src="img\MansiGit.github.io.png" class="card-img-top" alt="img\MansiGit.github.io.png">
-                        <div class="card-body">
-                          <h3 class="card-title"><b>MansiGit.github.io</b></h3>
-                          <p class="lead">Web Portfolio</p>
-                          <p class="card-text">Checkout my source code for this website! </p>
-                          <p>
-                            <span class="badge badge-pill badge-secondary">HTML</span>
-                            <span class="badge badge-pill badge-secondary">SCSS</span>
-                            <span class="badge badge-pill badge-secondary">JS</span>
-                            <span class="badge badge-pill badge-secondary">Gulp</span>
-                            <span class="badge badge-pill badge-secondary">npm</span>
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <a href="https://github.com/MansiGit/MansiGit.github.io" class="text-dark" target="_blank">
-                            <i class="fab fa-github-square fa-2x"></i>
-                          </a>
-                          <a href="https://mansigit.github.io/" class="btn btn-dark float-right" >View project</a>
-                        </div>
-                      </div>
-                    </div>
-                  <!-- End card --> 
+              <!-- End card --> 
    
             </div>                           
         </div>
       </section>
       <hr/>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <h2 class="mb-2">Awards &amp; Certifications</h2>
+        <h2 class="mb-2">Certifications &amp; Awards </h2>
         <div class="container">
           <div class="gridder my-3">
 
             <div class="grid-item wow zoomIn">
-              <div class="img-place" data-src="img\AWS_CCP.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tableau Desktop Specialist</h5> <p>Data Visualization</p>">
+              <div class="img-place" data-src="img\AWS_CCP.jpg" data-fancybox data-caption="<h5 class='fg-theme'>AWS Certified Cloud Practitioner</h5> <p>Cloud Computing</p>">
                 <img src="img\AWS_CCP.jpg" alt="">
                 <div class="img-caption">
                   <h5 class="fg-theme">AWS Certified Cloud Practitioner</h5>
@@ -576,7 +578,7 @@
             </div>
 
             <div class="grid-item wow zoomIn">
-              <div class="img-place" data-src="img\PythonCertification.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tableau Desktop Specialist</h5> <p>Data Visualization</p>">
+              <div class="img-place" data-src="img\PythonCertification.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Certified Associate in Python Programming</h5> <p>Python programming</p>">
                 <img src="img\PythonCertification.jpg" alt="">
                 <div class="img-caption">
                   <h5 class="fg-theme">Certified Associate in Python Programming</h5>
