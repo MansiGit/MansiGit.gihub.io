@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2023 Start Bootstrap
+ * Copyright 2013-2024 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 body {
@@ -110,10 +110,40 @@ h1 .text-primary {
     max-width: 300px;
     max-height: 150px; } }
 
-.gridder {
-  position: relative;
-  display: block;
-  align-content: left; }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "a b c" "d e f"  "g h i"; }
+
+.a {
+  grid-area: a; }
+
+.b {
+  grid-area: b; }
+
+.c {
+  grid-area: c; }
+
+.d {
+  grid-area: d; }
+
+.e {
+  grid-area: e; }
+
+.f {
+  grid-area: f; }
+
+.g {
+  grid-area: g; }
+
+.h {
+  grid-area: h; }
+
+.i {
+  grid-area: i; }
 
 .grid-item {
   display: block;
@@ -132,9 +162,6 @@ h1 .text-primary {
 .grid-item .img-place {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  max-width: 350px;
-  height: 100%;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer; }
@@ -148,23 +175,19 @@ h1 .text-primary {
   color: #fff;
   z-index: 11; }
 
-.grid-item .img-caption p {
-  font-size: 14px;
-  margin-bottom: 0; }
+@media (max-width: 991px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    /* 2 columns */
+    grid-template-rows: auto;
+    grid-template-areas: "a b" "c d" "e f" "g h" "i .";
+    /* The dot represents an empty cell */ } }
 
-.grid-item .img-caption p::before {
-  content: "\2014";
-  margin-right: 5px; }
-
-@media (min-width: 768px) {
-  .gridder .grid-item,
-  .gridder .grid-sizer {
-    width: 50%; } }
-
-@media (min-width: 992px) {
-  .gridder .grid-item,
-  .gridder .grid-sizer {
-    width: 33.33333%; } }
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+    /* 1 column */
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i"; } }
 
 .fg-theme {
   color: #EF3724 !important; }
